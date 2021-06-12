@@ -1,0 +1,22 @@
+$color1: hsl(257, 27%, 26%);
+$color2:hsl(180, 66%, 49%);
+$color3:hsl(257, 7%, 63%);
+$color4:hsl(0, 0%, 89%);
+$color5:hsl(255, 11%, 22%);
+$color6:hsl(260, 8%, 14%);
+
+.btn_blue{
+    background-color: $color2;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 25px;
+    font-weight: 500;
+}
+.btn_blue_sq{
+    background-color: $color2;
+    color:white;
+    padding:8px 20px;
+    height: 40px;
+    font-weight: 500;
+    border-radius: 5px;
+}
