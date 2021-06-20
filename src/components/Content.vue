@@ -279,14 +279,17 @@ export default {
     z-index: 2;
 
     h1 {
+      text-align: center;
       font-weight: 700;
     }
     > h3 {
+      text-align: center;
       max-width: 400px;
       color: $color3;
       margin: 0 auto;
       line-height: 20px;
       margin-top: 15px;
+      margin-bottom: 20px;
     }
     > div.line {
       margin: 0 auto;

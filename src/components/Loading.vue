@@ -4,7 +4,6 @@
       <div class="loading"></div>
       <br />
       <p>It takes less than one minute. <br />Please wait patiently.</p>
-      <p>{{ data }}</p>
     </div>
   </div>
 </template>

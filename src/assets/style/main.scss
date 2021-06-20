@@ -11,6 +11,10 @@ $color6:hsl(260, 8%, 14%);
     color: white;
     border-radius: 25px;
     font-weight: 500;
+    transition: background-color 1s;
+    &:hover{
+        background-color:rgb(2, 141, 132)  
+    }
 }
 .btn_blue_sq{
     background-color: $color2;
