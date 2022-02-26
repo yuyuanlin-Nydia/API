@@ -43,19 +43,17 @@ export default {
         }
       );
     },
-   
   },
   created() {
     this.checkRoute();
   },
   mounted() {
-    let vm=this;
+    let vm = this;
     window.fbAsyncInit = function () {
       window.FB.init({
-        appId: "202220545092331",
-        cookie: true,
+        appId: "2745064975799960",
         xfbml: true,
-        version: "v11.0",
+        version: "v13.0",
       });
       window.FB.AppEvents.logPageView();
       // Get FB Login Status
@@ -75,7 +73,7 @@ export default {
       }
       js = d.createElement(s);
       js.id = id;
-      js.src = "https://connect.facebook.net/zh-TW/sdk.js";
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
       fjs.parentNode.insertBefore(js, fjs);
     })(document, "script", "facebook-jssdk");
   },
