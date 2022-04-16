@@ -145,7 +145,6 @@ export default {
         client_id:
           "508912060316-3codt6ul3fnne8hi7shfsttdfkl9qs8a.apps.googleusercontent.com",
       });
-      console.log("aaa");
       window.gapi.load("signin2", () => {});
     });
   },

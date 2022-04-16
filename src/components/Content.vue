@@ -21,19 +21,16 @@
       <button class="btn_blue_sq" @click="createLink">{{ btn_text }}</button>
     </div>
     <div class="url_created" v-show="shorten_link">
-      <div>
-        <span
-          ><a :href="user_link" target="_blank">{{ user_link }}</a></span
-        >
+      
         <div>
           <span
             ><a :href="shorten_link" target="_blank">{{
               shorten_link
             }}</a></span
           >
-          <button class="btn_blue_sq">COPY</button>
+          <button class="btn_blue_sq" @click='copyLink'>COPY</button>
         </div>
-      </div>
+      
     </div>
   </div>
   <div class="list_sec">
@@ -115,6 +112,17 @@ export default {
         this.btn_text = "Shorten it!";
         this.$bus.emit("endCreate");
       });
+    },
+    copyLink() {
+      navigator.clipboard
+        .writeText(this.shorten_link)
+        .then(() => {
+          alert("已複製");
+        })
+        .catch((err) => {
+          console.log("Something went wrong", err);
+        });
+      
     },
   },
 };
@@ -251,7 +259,7 @@ export default {
       background-color: white;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-evenly;
       border-radius: 5px;
       margin-bottom: 20px;
       padding: 0px 10px;
